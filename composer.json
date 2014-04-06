@@ -1,0 +1,8 @@
+{
+  "require": {
+    "chuyskywalker/rolling-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {"Celestiaradio\\Api\\": "src/"}
+  }
+}

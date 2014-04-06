@@ -1,0 +1,48 @@
+# Project-related
+src/config/apikeys.php
+CR api.md
+crapi2.txt.json
+phpinfo().html
+pvlapi.txt.json
+
+# SASS
+.sass-cache
+
+# Composer
+composer.phar
+composer.lock
+vendor/
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Icon must ends with two \r.
+Icon
+
+
+## Thumbnails
+._*
+
+## Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+## Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+# Windows
+
+## Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+## Folder config file
+Desktop.ini
+
+## Recycle Bin used on file shares
+$RECYCLE.BIN/
