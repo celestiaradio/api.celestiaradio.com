@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * @package celestiaradio-api
  * @author  Mark Seymour <mark.seymour.ns@gmail.com>
  */
-class NowplayingController extends AbstractController {
+class NowplayingController {
   
   // API access URLs
   private static $centova_url = 'http://audio.celestiaradio.com:2199/api.php?f=json';
