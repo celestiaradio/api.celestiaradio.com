@@ -20,6 +20,7 @@ class Response
      */
     public static function create($data, $success, $format)
     {
+      header("Access-Control-Allow-Origin: *");
       header('Cache-Control: max-age=300');
       switch ($format) {
           case 'application/json':
