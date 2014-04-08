@@ -50,7 +50,7 @@ return [
 The configuration then can be accessed anywhere by calling `Config::get('my_config_file')['key']`. In the future, the `::get` method may be updated to allow a single string with dot notation (`Config::get('my_config_file.key')`) as well as the normal array notation.
 
 ### Setting up access for CentovaCast and Icecast*
-* _For the Celestia Radio Web Team only—Sorry!_
+\* _For the Celestia Radio Web Team only—Sorry!_
 
 In order to configure the username and password used for accessing Celestia Radio's CentovaCast and Icecast servers (for use in `/nowplaying`), you must create a new directory under `/src` named "config", and under that create a new file named `apikeys.php`.
 
