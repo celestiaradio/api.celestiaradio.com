@@ -51,7 +51,7 @@ try {
     $controller_name = ucfirst($request->url_elements[0]) . 'Controller';
     $namespaced_controller_name = 'Celestiaradio\Api\Controllers\\'.$controller_name;
   
-    if (class_exists($namespaced_controller_name)) {
+    if (class_exists($namespaced_controller_name) && $controller_name != 'BaseController') {
       $controller = new $namespaced_controller_name;
       $action_name = strtolower($request->method);
       $response_str = call_user_func_array(array($controller, $action_name), array($request));
@@ -66,7 +66,7 @@ try {
   }
   
 } catch (Exception $e) {
-  header('HTTP/1.1 422 ' . $e->getMessage());
+  header($_SERVER['SERVER_PROTOCOL'].' 422'.$e->getMessage(), true, 422);
   $response_str = $e->getMessage();
   $response_success = false;
 }

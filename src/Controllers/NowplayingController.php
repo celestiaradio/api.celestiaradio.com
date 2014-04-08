@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * @package celestiaradio-api
  * @author  Mark Seymour <mark.seymour.ns@gmail.com>
  */
-class NowplayingController {
+class NowplayingController extends BaseController {
   
   // API access URLs
   private static $centova_url = 'http://audio.celestiaradio.com:2199/api.php?f=json';
@@ -56,26 +56,6 @@ class NowplayingController {
   function __destruct()
   {
     curl_close($this->curl_eqb);
-  }
-  
-  /**
-   * POST method.
-   * We currently do not use POST within the API.
-   * @throw Exception
-   */
-  public function post($request)
-  {
-    throw new \Exception('This method does not support POST.');
-  }
-  
-  /**
-   * PUT method.
-   * We currently do not use PUT within the API.
-   * @throw Exception
-   */
-  public function put($request)
-  {
-    throw new \Exception('This method does not support PUT.');
   }
   
   /**
