@@ -162,6 +162,8 @@ class NowplayingController {
   {
     $result = $this->data['icecast'];
     
+    if(is_string($result)) throw new \Exception(trim($result));
+    
     $streampublic = $result->xpath('/icestats/source[@mount="/stream"]/public');
     $stream = ($streampublic) ? $result->xpath('/icestats/source[@mount="/stream"]') : $result->xpath('/icestats/source[@mount="/autodj"]');
     
