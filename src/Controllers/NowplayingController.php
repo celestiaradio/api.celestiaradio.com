@@ -59,6 +59,26 @@ class NowplayingController {
   }
   
   /**
+   * POST method.
+   * We currently do not use POST within the API.
+   * @throw Exception
+   */
+  public function post($request)
+  {
+    throw new \Exception('This method does not support POST.');
+  }
+  
+  /**
+   * PUT method.
+   * We currently do not use PUT within the API.
+   * @throw Exception
+   */
+  public function put($request)
+  {
+    throw new \Exception('This method does not support PUT.');
+  }
+  
+  /**
    * GET method.
    * 
    * @param  Request $request
