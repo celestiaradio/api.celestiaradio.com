@@ -1,12 +1,12 @@
 Celestia Radio API
-------------------
+==================
 
 This document is designed to document the various commands supported by the new Celestia Radio API that was initially developed by [Mark Seymour][email] in early April 2014, as well as outlining possible additions and upgrades to the API as time goes on.
 
 The API itself uses Composer's `autoload` feature to automatically load classes as required—no need to use `include` except for the autoload feature itself at the beginning of `index.php`.
 
 Methods
-=======
+-------
 
 ### /nowplaying
 
@@ -17,7 +17,7 @@ By default, the API makes available the current song as well as the previous 9 s
 In order to minimize the amount of data sent by the API (and not necessarily to the aggregated APIs, *this may change in the future*), users can use `/nowplaying/current` to only retrieve the latest song data.
 
 Contributing
-------------
+============
 
 1. Fork it.
 2. Create a branch (`git checkout -b new_api_feature`)
