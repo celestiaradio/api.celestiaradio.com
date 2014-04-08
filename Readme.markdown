@@ -5,8 +5,25 @@ This document is designed to document the various commands supported by the new 
 
 The API itself uses Composer's `autoload` feature to automatically load classes as required—no need to use `include` except for the autoload feature itself at the beginning of `index.php`.
 
+The API can be used from <http://api.celestiaradio.com/>.
+
 Methods
 -------
+
+With the API, the general format of the response is:
+```json
+{
+  "status": "success",
+  "result": { "...": "..." }
+}
+```
+however `result` may contain any kind of object, depending on the method. If the API encounters an error, the response will be:
+```json
+{
+  "status": "error",
+  "error": "An error message"
+}
+```
 
 ### /nowplaying
 
