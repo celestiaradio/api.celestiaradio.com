@@ -36,6 +36,6 @@ class ResponseJson
     public function render()
     {
       header('Content-Type: application/json');
-      return json_encode($this->data;
+      return json_encode($this->data);
     }
 }
