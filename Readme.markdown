@@ -33,6 +33,39 @@ By default, the API makes available the current song as well as the previous 9 s
 
 In order to minimize the amount of data sent by the API (and not necessarily to the aggregated APIs, *this may change in the future*), users can use `/nowplaying/current` to only retrieve the latest song data.
 
+Configuring
+-----------
+
+Adding internal configuration is easy. Just create a new directory under `/src` named `config`, and individual configuration groups can be created under individual files with the extension `.php`. The format of the files takes a page from [Laravel](http://laravel.com/), where they are formatted like this:
+```php
+<?php
+return [
+  'key' => 'value',
+  'another_key' => [
+    'a_sub_key' => 'a sub value'
+  ]
+];
+```
+
+The configuration then can be accessed anywhere by calling `Config::get('my_config_file')['key']`. In the future, the `::get` method may be updated to allow a single string with dot notation (`Config::get('my_config_file.key')`) as well as the normal array notation.
+
+Setting up access for CentovaCast and Icecast*
+==============================================
+* _For the Celestia Radio Web Team only—Sorry!_
+
+In order to configure the username and password used for accessing Celestia Radio's CentovaCast and Icecast servers (for use in `/nowplaying`), you must create a new directory under `/src` named "config", and under that create a new file named `apikeys.php`.
+
+The format of the file should be as follows:
+```php
+<?php
+return [
+  'centova' => [
+    'username' => '<CENTOVA USERNAME>',
+    'password' => '<CENTOVA PASSWORD>'
+  ]
+];
+```
+
 Contributing
 ------------
 
