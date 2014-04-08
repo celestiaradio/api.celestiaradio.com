@@ -38,7 +38,8 @@ class NowplayingController extends BaseController {
     'irc' => 'irc.canternet.org/#CelestiaRadio',
     'twitter_url' => 'https://twitter.com/celestiaradio',
     'web_url' => 'http://celestiaradio.com',
-    'category' => 'audio'
+    'category' => 'audio',
+    'stream_url' => 'http://audio.celestiaradio.com:8062/stream'
   ];
   
   /**
