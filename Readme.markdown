@@ -17,7 +17,7 @@ By default, the API makes available the current song as well as the previous 9 s
 In order to minimize the amount of data sent by the API (and not necessarily to the aggregated APIs, *this may change in the future*), users can use `/nowplaying/current` to only retrieve the latest song data.
 
 Contributing
-============
+------------
 
 1. Fork it.
 2. Create a branch (`git checkout -b new_api_feature`)
