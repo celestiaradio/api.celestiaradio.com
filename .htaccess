@@ -3,7 +3,7 @@ Header unset Set-Cookie
 
 <IfModule mod_rewrite.c>
   RewriteEngine on
-  RewriteBase /
+RewriteBase /~mark/crwebsite/stats3
   
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
