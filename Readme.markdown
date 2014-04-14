@@ -77,4 +77,4 @@ Contributing
 [email]: mark.seymour.ns@gmail.com
 [hs]: https://hoofsounds.little.my/
 [azbot]: https://github.com/mseymour/azurebot
-[1]: https://github.com/celestia-radio/api.celestiaradio.com/pulls
+[1]: https://github.com/celestiaradio/api.celestiaradio.com/pulls
