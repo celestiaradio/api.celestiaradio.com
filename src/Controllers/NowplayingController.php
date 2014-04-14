@@ -104,8 +104,8 @@ class NowplayingController extends BaseController {
           CURLOPT_POST => true, 
           CURLOPT_POSTFIELDS => [
             'xm' => 'server.getsongs',
-            'a[username]'=>\Config::get('apikeys')['centova']['username'],
-            'a[password]'=>\Config::get('apikeys')['centova']['password'],
+            'a[username]' => \Config::get('apikeys')['centova']['username'],
+            'a[password]' => \Config::get('apikeys')['centova']['password'],
             'a[mountpoints]' => '/stream'
           ], 
           CURLOPT_RETURNTRANSFER => true,
@@ -193,6 +193,7 @@ class NowplayingController extends BaseController {
   
   /**
    * Sorts all song data into a specific format and retrieves EQBeats data.
+   * @param limit [Integer] 10 The number of individual songs to retrieve from Centova's API. (The maximum from Centova is 15.)
    */
   private function get_song_data($limit = 10)
   {
@@ -231,6 +232,7 @@ class NowplayingController extends BaseController {
   /**
    * Formats song data into a specific format.
    * @param Object $song
+   * @return Array A 'song' array
    */
   private function format_song($song)
   {
